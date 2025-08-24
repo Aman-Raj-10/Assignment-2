@@ -1,0 +1,48 @@
+#include<stdio.h>
+
+int main()
+{
+int maths;
+int phy;
+int cs;
+
+printf("Enter the marks of maths : ");
+scanf("%d", &maths);
+
+printf("Enter the marks of phy : ");
+scanf("%d", &phy);
+
+printf("Enter the marks of cs : ");
+scanf("%d", &cs);
+
+int avg = (maths + phy + cs)/3;
+printf("Average of three subjects = %d/n",avg);
+
+if(maths < 35 || phy < 35 || cs < 35)
+{
+printf("Better luck next time. You're fail");
+}
+else
+{
+if(avg >= 70)
+{
+printf("Congrats , you got distinction");
+}
+ else if (avg >= 60)
+{
+printf("Congrats , you got first class");
+}
+else if (avg >= 50)
+{
+printf("Congrats , you got second class");
+}
+else if ( avg >= 35)
+{
+printf("Congrats , you got third class");
+}
+else
+{
+printf("Better luck next time ! You are fail.\n");
+}
+}
+return 0;
